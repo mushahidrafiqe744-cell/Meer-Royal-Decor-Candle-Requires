@@ -18,42 +18,42 @@ export const CategoryStoriesBar: React.FC = () => {
       id: 'all',
       title: 'All Items',
       titleUrdu: 'تمام اشیاء',
-      image: '/src/assets/images/hero_candle_lifestyle_editorial_1790853087024.jpg',
+      image: '/images/hero_candle_lifestyle_editorial_1790853087024.jpg',
       count: '6 Products'
     },
     {
       id: 'luxury-jars',
       title: 'Aroma Jars',
       titleUrdu: 'خوشبودار جارز',
-      image: '/src/assets/images/product_scented_candle_jar_1790775161737.jpg',
+      image: '/images/product_scented_candle_jar_1790775161737.jpg',
       count: 'Pure Soy'
     },
     {
       id: 'bubble-candles',
       title: 'Bubble Art',
       titleUrdu: 'ببل کینڈلز',
-      image: '/src/assets/images/product_luxury_bubble_candle_1790775202396.jpg',
+      image: '/images/product_luxury_bubble_candle_1790775202396.jpg',
       count: 'Handmade'
     },
     {
       id: 'party-decor',
       title: 'Event Decor',
       titleUrdu: 'پارٹی ڈیکور',
-      image: '/src/assets/images/product_party_decor_setup_1790775176807.jpg',
+      image: '/images/product_party_decor_setup_1790775176807.jpg',
       count: 'Balloon Arches'
     },
     {
       id: 'disposables',
       title: 'Tableware',
       titleUrdu: 'ڈسپوزایبل پلیٹس',
-      image: '/src/assets/images/product_disposable_tableware_1790775193176.jpg',
+      image: '/images/product_disposable_tableware_1790775193176.jpg',
       count: 'Theme Sets'
     },
     {
       id: 'gift-sets',
       title: 'Gift Hampers',
       titleUrdu: 'گفٹ ہیمپر',
-      image: '/src/assets/images/category_candle_hamper_lifestyle_1790853114266.jpg',
+      image: '/images/category_candle_hamper_lifestyle_1790853114266.jpg',
       count: 'Velvet Boxes'
     }
   ];

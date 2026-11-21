@@ -90,7 +90,7 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-stone-200/80 aspect-[4/3] sm:aspect-[16/11]">
               <img
-                src="/src/assets/images/hero_candle_lifestyle_editorial_1790853087024.jpg"
+                src="/images/hero_candle_lifestyle_editorial_1790853087024.jpg"
                 alt="Editorial candle lifestyle setup"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"

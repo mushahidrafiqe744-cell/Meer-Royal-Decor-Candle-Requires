@@ -27,7 +27,7 @@ export const VideoAdSection: React.FC = () => {
                 muted
                 playsInline
                 controls
-                poster="/src/assets/images/story_candle_pouring_craft_1790853101150.jpg"
+                poster="/images/story_candle_pouring_craft_1790853101150.jpg"
                 className="w-full h-full object-cover"
               >
                 <source

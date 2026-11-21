@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/src/assets/images/meer_royal_logo_1790857160911.jpg"
+                src="/images/meer_royal_logo_1790857160911.jpg"
                 alt="Meer Royal Decor Logo"
                 className="w-12 h-12 rounded-full object-cover border-2 border-amber-600/40 shadow-sm"
               />

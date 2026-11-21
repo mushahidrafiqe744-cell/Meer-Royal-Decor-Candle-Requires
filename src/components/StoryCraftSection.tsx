@@ -21,7 +21,7 @@ export const StoryCraftSection: React.FC = () => {
           <div className="lg:col-span-6 relative">
             <div className="rounded-3xl overflow-hidden shadow-xl border border-stone-200 aspect-[4/3] bg-stone-100">
               <img
-                src="/src/assets/images/story_candle_pouring_craft_1790853101150.jpg"
+                src="/images/story_candle_pouring_craft_1790853101150.jpg"
                 alt="Artisan candle pouring process"
                 className="w-full h-full object-cover"
               />

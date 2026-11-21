@@ -51,7 +51,7 @@ export const PartyDecorSection: React.FC = () => {
                   Custom Themes
                 </span>
                 <img
-                  src="/src/assets/images/product_party_decor_setup_1790775176807.jpg"
+                  src="/images/product_party_decor_setup_1790775176807.jpg"
                   alt="Birthday Balloon Decor"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -100,7 +100,7 @@ export const PartyDecorSection: React.FC = () => {
                   Food Grade & Eco
                 </span>
                 <img
-                  src="/src/assets/images/product_disposable_tableware_1790775193176.jpg"
+                  src="/images/product_disposable_tableware_1790775193176.jpg"
                   alt="Party Disposable Tableware"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -149,7 +149,7 @@ export const PartyDecorSection: React.FC = () => {
                   Signature Vibe
                 </span>
                 <img
-                  src="/src/assets/images/hero_luxury_candles_decor_1790775140482.jpg"
+                  src="/images/hero_luxury_candles_decor_1790775140482.jpg"
                   alt="Candlelight Dinner Setup"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />

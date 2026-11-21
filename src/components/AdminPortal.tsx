@@ -8,14 +8,14 @@ import { useStore } from '../context/StoreContext';
 import { CategoryType } from '../types';
 
 const IMAGE_PRESETS = [
-  { label: 'Scented Candle Jar', url: '/src/assets/images/product_scented_candle_jar_1790775161737.jpg' },
-  { label: 'Party Decor Arch', url: '/src/assets/images/product_party_decor_setup_1790775176807.jpg' },
-  { label: 'Luxury Bubble Candle', url: '/src/assets/images/product_luxury_bubble_candle_1790775202396.jpg' },
-  { label: 'Party Disposables', url: '/src/assets/images/product_disposable_tableware_1790775193176.jpg' },
-  { label: 'Luxury Gift Hamper', url: '/src/assets/images/category_candle_hamper_lifestyle_1790853114266.jpg' },
-  { label: 'Yankee Glass Jars', url: '/src/assets/images/hero_candle_lifestyle_editorial_1790853087024.jpg' },
-  { label: 'Velvet Gold Tin', url: '/src/assets/images/hero_luxury_candles_decor_1790775140482.jpg' },
-  { label: 'Brand Emblem Logo', url: '/src/assets/images/meer_royal_logo_1790857160911.jpg' }
+  { label: 'Scented Candle Jar', url: '/images/product_scented_candle_jar_1790775161737.jpg' },
+  { label: 'Party Decor Arch', url: '/images/product_party_decor_setup_1790775176807.jpg' },
+  { label: 'Luxury Bubble Candle', url: '/images/product_luxury_bubble_candle_1790775202396.jpg' },
+  { label: 'Party Disposables', url: '/images/product_disposable_tableware_1790775193176.jpg' },
+  { label: 'Luxury Gift Hamper', url: '/images/category_candle_hamper_lifestyle_1790853114266.jpg' },
+  { label: 'Yankee Glass Jars', url: '/images/hero_candle_lifestyle_editorial_1790853087024.jpg' },
+  { label: 'Velvet Gold Tin', url: '/images/hero_luxury_candles_decor_1790775140482.jpg' },
+  { label: 'Brand Emblem Logo', url: '/images/meer_royal_logo_1790857160911.jpg' }
 ];
 
 export const AdminPortal: React.FC = () => {

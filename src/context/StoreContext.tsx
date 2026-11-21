@@ -99,17 +99,39 @@ const checkIsAdminRoute = () => {
   );
 };
 
+const fixImagePath = (url?: string): string => {
+  if (!url) return '';
+  return url.startsWith('/src/assets/images/')
+    ? url.replace('/src/assets/images/', '/images/')
+    : url;
+};
+
+const normalizeProducts = (items: Product[]): Product[] =>
+  items.map((p) => ({ ...p, image: fixImagePath(p.image) }));
+
+const normalizeMedia = (items: MediaItem[]): MediaItem[] =>
+  items.map((m) => ({
+    ...m,
+    src: fixImagePath(m.src),
+    poster: m.poster ? fixImagePath(m.poster) : m.poster
+  }));
+
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   // Products
   const [products, setProducts] = useState<Product[]>(() => {
     const saved = localStorage.getItem('meer_products_v2');
-    return saved ? JSON.parse(saved) : INITIAL_PRODUCTS;
+    return saved ? normalizeProducts(JSON.parse(saved)) : INITIAL_PRODUCTS;
   });
 
   // Cart
   const [cart, setCart] = useState<CartItem[]>(() => {
     const saved = localStorage.getItem('meer_cart_v2');
-    return saved ? JSON.parse(saved) : [];
+    if (!saved) return [];
+    const parsed: CartItem[] = JSON.parse(saved);
+    return parsed.map((item) => ({
+      ...item,
+      product: { ...item.product, image: fixImagePath(item.product.image) }
+    }));
   });
 
   // Bookings
@@ -127,7 +149,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   // Media
   const [mediaList, setMediaList] = useState<MediaItem[]>(() => {
     const saved = localStorage.getItem('meer_media_v2');
-    return saved ? JSON.parse(saved) : INITIAL_MEDIA;
+    return saved ? normalizeMedia(JSON.parse(saved)) : INITIAL_MEDIA;
   });
 
   // Team Members
@@ -179,7 +201,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         if (res.ok) {
           const db = await res.json();
           if (db.products && Array.isArray(db.products) && db.products.length > 0) {
-            setProducts(db.products);
+            setProducts(normalizeProducts(db.products));
           }
           if (db.bookings && Array.isArray(db.bookings)) {
             setBookings(db.bookings);
@@ -191,7 +213,7 @@ export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ childre
             setTeamMembers(db.teamMembers);
           }
           if (db.mediaList && Array.isArray(db.mediaList)) {
-            setMediaList(db.mediaList);
+            setMediaList(normalizeMedia(db.mediaList));
           }
           if (db.timings) {
             setStoreTimings(db.timings);

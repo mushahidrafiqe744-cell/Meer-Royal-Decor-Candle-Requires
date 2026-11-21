@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
           className="text-left group cursor-pointer flex items-center gap-3"
         >
           <img
-            src="/src/assets/images/meer_royal_logo_1790857160911.jpg"
+            src="/images/meer_royal_logo_1790857160911.jpg"
             alt="Meer Royal Decor Logo"
             className="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-amber-900/30 shadow-xs group-hover:scale-105 transition-transform"
           />
